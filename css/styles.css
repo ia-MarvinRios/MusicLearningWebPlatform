@@ -806,6 +806,28 @@ body{
     background-color: #333;
 }
 
+#piano-container {
+    position: relative;
+}
+
+#toggleLabelsButton {
+    position: absolute;
+    top: -50px; /* Ajusta esta distancia según sea necesario */
+    left: 50%; /* Para centrar el botón horizontalmente */
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    background-color: #001A49;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+.hidden {
+    display: none;
+}
+
 /* ______________________________________________MEDIA QUERIES__________________________________________ */
 @media (max-width: 800px){
     .nav__menu{
@@ -1061,22 +1083,4 @@ body{
     .piano__section.active{
         bottom: calc(1vh - 157px * 3);
     }
-}
-
-
-#piano-container {
-    position: relative;
-}
-
-#toggleLabelsButton {
-    position: absolute;
-    top: -50px; /* Ajusta esta distancia según sea necesario */
-    left: 50%; /* Para centrar el botón horizontalmente */
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.hidden {
-    display: none;
 }
