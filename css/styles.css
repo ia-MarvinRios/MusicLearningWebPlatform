@@ -725,23 +725,6 @@ body{
     text-align: center;
 }
 
-.clr__questions__arrow{
-    border-radius: 50%;
-    background-color: var(--color-title);
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
-    margin-left: 10px;
-    transition: transform .3s;
-}
-
-.clr__questions__arrow--rotate{
-    transform: rotate(180deg);
-}
-
 /* PIANO SECTION */
 .piano__section{
     position: fixed;

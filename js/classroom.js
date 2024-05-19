@@ -81,20 +81,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // --------------Unidades de estudio--------------------
     const unitTitle = [...document.querySelectorAll('.unit-title')];
 
-    unitTitle.forEach(unit => {
-        unit.addEventListener('click', ()=>{
-            let unitheight = 0;
-            let content = unit.nextElementSibling;
-            let clraddPadding = unit.parentElement.parentElement;
+    unitTitle.forEach(question => {
+        question.addEventListener('click', ()=>{
+            let height = 0;
+            let answer = question.nextElementSibling;
+            let addPadding = question.parentElement.parentElement;
 
-            clraddPadding.classList.toggle('clr__video-item-container--add');
-            unit.children[0].classList.toggle('clr__questions__arrow--rotate');
+            addPadding.classList.toggle('video-item-container--add');
+            question.children[0].classList.toggle('questions__arrow--rotate');
 
-            if(content.clientHeight === 0){
-                unitheight = unit.scrollHeight;
+            if(answer.clientHeight === 0){
+                height = answer.scrollHeight;
             }
 
-            unit.style.height = `${unitheight}px`;
+            answer.style.height = `${height}px`;
         });
     });
 });
