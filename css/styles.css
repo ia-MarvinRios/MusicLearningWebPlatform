@@ -1005,6 +1005,7 @@ body{
     /*----------------------CLASSROOM----------------------*/
     :root{
         --piano-hidden: calc(5 * -160px + 30px);
+        --video-width: 300px;
     }
 
     .clr__header .clr__headercontent h2{
@@ -1029,7 +1030,7 @@ body{
     
     .unit-title{
         display: flex;
-        font-size: 18px;
+        font-size: 14px;
         padding: 15px 0 15px;
         gap: 1rem;
     }
@@ -1046,6 +1047,7 @@ body{
 
 @media (max-width: 280px){
     :root{
+        --video-width: 200px;
         --piano-hidden: calc(6 * -160px + 30px);
     }
 
