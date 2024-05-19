@@ -42,6 +42,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     pianoBtn.addEventListener("click", function() {
         piano.classList.toggle("active");
+
+
+        let pianoTags = document.querySelector("#toggleLabelsButton");
+        
+        if(piano.classList.contains("active")){            
+            pianoTags.style.display = "block";
+        } else {
+            pianoTags.style.display = "none";
+        }
     });
     
     // -----------Referencias href modificadas--------------
