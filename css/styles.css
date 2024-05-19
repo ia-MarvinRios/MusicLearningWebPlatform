@@ -554,7 +554,7 @@ body{
 
 .clr__header .clr__headercontent h2{
     font-weight: 300;
-    padding: 0px 20px;
+    padding: 0 20px 0 20px;
     color: white;
     place-content: center;
     margin-left: 7vw;
@@ -675,7 +675,7 @@ body{
     transition: padding .3s;
     border: 1px solid #5454D4;
     border-radius: 6px;
-    position: relative; /* Añade esta línea */
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -683,7 +683,7 @@ body{
 }
 
 .video-item-container::before{
-    content: ""; /* Añade este pseudo-elemento */
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1003,31 +1003,41 @@ body{
 
     /*----------------------CLASSROOM----------------------*/
     :root{
-        --piano-hidden: calc(6 * -160px + 30px);
+        --piano-hidden: calc(5 * -160px + 30px);
     }
 
     .clr__header .clr__headercontent h2{
         margin-left: 20vw;
         font-size: .8rem;
     }
-    
-    #clr__header__title{
-        font-size: .8rem;
-    }
 
+    /*Course legend*/
     .clr__courselegend h2{
         font-size: 1.5rem;
     }
 
     .clr__courselegend p{
-        font-size: .7rem;
+        font-size: 1rem;
     }
 
+    /*Video Section*/
+    .unit-title-container{
+        padding: 0 10px 0;
+        overflow: hidden;
+    }
+    
+    .unit-title{
+        display: flex;
+        font-size: 18px;
+        padding: 10px 0 10px;
+        gap: 1rem;
+    }
     .video-title{
         font-size: 14px;
         padding-bottom: 20px;
     }
 
+    /*Piano Section*/
     .piano__section.active{
         bottom: calc(-160px * 2);
     }
