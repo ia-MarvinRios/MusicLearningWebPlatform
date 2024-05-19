@@ -607,7 +607,6 @@ body{
 
 /*INTRO SECTION*/
 .clr__intro-section{
-    margin-top: 3rem;
     text-align: center;
 }
 
@@ -619,7 +618,6 @@ body{
 
 .clr__paragraph{
     line-height: 1.7;
-    margin: 0 10vw;
 }
 
 .clr__list{
@@ -640,8 +638,6 @@ body{
 
 /*OBJECTIVE SECTION*/
 .clr__objective-section{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -662,6 +658,10 @@ body{
 }
 
 .video-section{
+    text-align: center;
+}
+
+.video-section-container{
     display: grid;
     gap: 3em;
     padding-top: 50px;
