@@ -1030,7 +1030,7 @@ body{
     
     .unit-title{
         display: flex;
-        font-size: 14px;
+        font-size: 18px;
         padding: 15px 0 15px;
         gap: 1rem;
     }
