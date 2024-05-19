@@ -924,6 +924,9 @@ body{
         --piano-hidden: calc(10px + 3 * -160px);
     }
 
+    .piano__section.active{
+        bottom: calc(1vh - 160px * 2);
+    }
 }
 
 @media (max-width: 531px){
@@ -952,6 +955,10 @@ body{
     :root{
         --video-width: 300px;
         --piano-hidden: calc(20px + 4 * -160px);
+    }
+
+    .piano__section.active{
+        bottom: calc(1vh - 160px * 2);
     }
 }
 
@@ -1041,7 +1048,7 @@ body{
 
     /*Piano Section*/
     .piano__section.active{
-        bottom: calc(-160px * 2);
+        bottom: calc(1vh - 158px * 2);
     }
 }
 
@@ -1052,6 +1059,6 @@ body{
     }
 
     .piano__section.active{
-        bottom: calc(-160px * 2);
+        bottom: calc(1vh - 157px * 3);
     }
 }
