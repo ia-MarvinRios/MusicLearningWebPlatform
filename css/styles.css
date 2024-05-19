@@ -630,6 +630,7 @@ body{
     align-items: center;
     gap: 1em;
     list-style-position: inside;
+    margin-right: 2em;
 }
 
 .clr__list li::before {
@@ -1007,8 +1008,8 @@ body{
     }
 
     .clr__header .clr__headercontent h2{
-        margin-left: 20vw;
-        font-size: .8rem;
+        margin-left: 15vw;
+        font-size: 1rem;
     }
 
     /*Course legend*/
@@ -1022,14 +1023,14 @@ body{
 
     /*Video Section*/
     .unit-title-container{
-        padding: 0 10px 0;
+        padding: 0 20px 0;
         overflow: hidden;
     }
     
     .unit-title{
         display: flex;
         font-size: 18px;
-        padding: 10px 0 10px;
+        padding: 15px 0 15px;
         gap: 1rem;
     }
     .video-title{
