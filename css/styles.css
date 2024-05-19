@@ -1043,3 +1043,13 @@ body{
         bottom: calc(-160px * 2);
     }
 }
+
+@media (max-width: 280px){
+    :root{
+        --piano-hidden: calc(6 * -160px + 30px);
+    }
+
+    .piano__section.active{
+        bottom: calc(-160px * 2);
+    }
+}
