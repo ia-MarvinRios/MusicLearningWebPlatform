@@ -58,18 +58,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     enlaces.forEach(function (enlace) {
         enlace.addEventListener("click", function (e) {
-            e.preventDefault();
 
-            const destinoId = enlace.getAttribute("href").substring(1);
-            const destino = document.getElementById(destinoId);
-            const offset = 150;
+            const href = enlace.getAttribute("href");
 
-            if (destino) {
-                const destinoY = destino.offsetTop - offset;
-                window.scrollTo({
-                    top: destinoY,
-                    behavior: "smooth"
-                });
+            // Solo manejar anchors internos
+            if (href.startsWith("#")) {
+
+                e.preventDefault();
+
+                const destinoId = href.substring(1);
+                const destino = document.getElementById(destinoId);
+                const offset = 150;
+
+                if (destino) {
+                    const destinoY = destino.offsetTop - offset;
+
+                    window.scrollTo({
+                        top: destinoY,
+                        behavior: "smooth"
+                    });
+                }
             }
         });
     });
